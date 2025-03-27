@@ -1,0 +1,258 @@
+/* General Styling */
+body {
+    background: white;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 180px;
+    
+}
+
+/* Header Styling */
+/* header {
+    
+background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+     z-index: 1000;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    
+} */
+
+
+header {
+    background-color: rgb(247, 242, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(248, 95, 6)
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(248, 95, 6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Welcome Section */
+.welcome {
+    background-image: url(books.jpg);
+    text-align: center;
+    padding: 260px 60px;
+    height: 60vh;
+    
+    /* margin-bottom: 20px; */
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    color: #f3ebeb;
+}
+
+.startbtn{
+
+    color: rgb(248, 95, 6);
+    background: #f3f0f0;
+    
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.startbtn:hover {
+    background:rgb(248, 95, 6);
+    color: white;
+}
+
+
+#home{
+    height: 100vh;
+}
+
+
+
+h1{
+    color:rgb(248, 95, 6);
+}
+
+
+
+
+
+
+
+
+
+.des{
+    color: white;
+}
+
+
+
+
+/* Book Carousel Styling */
+.book-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Bigger section */
+    overflow: hidden;
+}
+
+.swiper {
+    width: 70%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Increased size */
+    height: 600px; /* Increased size */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 290px 20px;
+    background: rgb(248, 95, 6);
+    gap: 10px;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+
+/* Contact Section */
+.contact {
+    
+    padding: 300px 20px;
+    background: #f4f4f4;
+    margin-top: 345px;
+    height: 100vh;
+    
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+
+.contact_header{
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.contact-item p {
+   
+    font-size: 1rem;
+    color: #34495e;
+}
+
+
+/* section {
+    display: none;
+    padding: 50px 20px;
+}
+
+#home {
+    display: block;
+} */
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #c1c4c7;
+    color:black;
+    margin-top: 90px;
+}
